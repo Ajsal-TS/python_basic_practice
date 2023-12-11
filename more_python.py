@@ -1,20 +1,20 @@
 """To count the no of vowels."""
-# from collections import Counter
-# def countVowels(a):
-#     print(sum([j for i,j in Counter(a).items() if i in {"a","e","i","o","u","O","E","I","A","U"}]))
+from collections import Counter
+def countVowels(a):
+    print(sum([j for i,j in Counter(a).items() if i in {"a","e","i","o","u","O","E","I","A","U"}]))
 
-# # Test Cases
-# countVowels("hello")  # Expected Output: 2
-# countVowels("python")  # Expected Output: 1
-# countVowels("HeLOoooOOOooooO")
+# Test Cases
+countVowels("hello")  # Expected Output: 2
+countVowels("python")  # Expected Output: 1
+countVowels("HeLOoooOOOooooO")
 
 
 """To transform the matrix"""
-# def transposeMatrix(lst):
-#     print(list(zip(*lst)))
-# # Test Cases
-# matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# transposeMatrix(matrix)  # Expected Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+def transposeMatrix(lst):
+    print(list(zip(*lst)))
+# Test Cases
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+transposeMatrix(matrix)  # Expected Output: [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 
 
 """Palindrome of the string"""
@@ -134,9 +134,6 @@ isRotation("abc", "acb")  # Expected Output: False
 
 
 # # # Test Cases
-# def isAnagramPalindrome(a)
-# isAnagramPalindrome("ivicc")  # Expected Output: True
-# isAnagramPalindrome("hello")  # Expected Output: False
 
 # # Test Cases
 def rotateArray(a,b):
